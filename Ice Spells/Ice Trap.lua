@@ -22,8 +22,7 @@ combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_GIANTICE)
 --Cria condition de paralyze
 local condition = Condition(CONDITION_PARALYZE)
 condition:setParameter(CONDITION_PARAM_TICKS, 8000)
-condition:setFormula(-0.25, 0, -0.25, 0)
-
+condition:setFormula(-0.55, 0, -0.55, 0)
 combat:addCondition(condition)
 
 --Calcula a fórmula de dano da magia

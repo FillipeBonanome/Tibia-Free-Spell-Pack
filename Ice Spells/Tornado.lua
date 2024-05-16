@@ -62,7 +62,7 @@ function spell.onCastSpell(creature, variant)
 	for i = 1, config.hits - 1 do
 		addEvent(function(c)
 			if Creature(c) then
-				combat:execute(Creature(c), variant)
+				combat:execute(Creature(c), positionToVariant(spellPos))
 			end
 		end, i * config.duration, creature:getId())
 	end
